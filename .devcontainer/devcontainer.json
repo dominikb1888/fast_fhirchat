@@ -14,7 +14,6 @@
   "forwardPorts": [
     3000
   ],
-  "postCreateCommand": "pip install -r requirements.txt",
-  "remoteUser": "root"
+  "postCreateCommand": "uvicorn run main:app --port 3000"
 }
 
